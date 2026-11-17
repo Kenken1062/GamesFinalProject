@@ -1,0 +1,30 @@
+# Godot 4+ generated files (cache, imported textures, shader cache)
+.godot/
+
+# Godot 3 and older (harmless to keep)
+.import/
+
+# Exported builds
+export/
+build/
+*.exe
+*.pck
+
+# Export secrets (presets themselves are safe to share)
+export_credentials.cfg
+
+# Mono / C# (only matters if you use the .NET version of Godot)
+.mono/
+data_*/
+mono_crash.*.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / editor folders
+.vscode/
+.idea/
+*.swp
+*~
