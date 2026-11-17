@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://yrqc880gaag6"]
+
+[ext_resource type="Texture2D" uid="uid://dyfntbiihkn2g" path="res://assets/Tiles/tile_0130.png" id="1_0ewkg"]
+[ext_resource type="Script" uid="uid://s1e0v5rdb1ga" path="res://scripts/lightning_bolt.gd" id="1_wdxov"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wdxov"]
+size = Vector2(4, 14)
+
+[node name="LightningBolt" type="Area2D" unique_id=915107436]
+script = ExtResource("1_wdxov")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=684719136]
+modulate = Color(0, 0, 1, 1)
+self_modulate = Color(0.65882355, 0.76862746, 1, 1)
+position = Vector2(-1.1600004, -2.3399997)
+scale = Vector2(0.60499996, 1.0425)
+texture = ExtResource("1_0ewkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1317934645]
+position = Vector2(-1, -2)
+shape = SubResource("RectangleShape2D_wdxov")

@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://ru1p4l80x8jq"]
+
+[ext_resource type="Texture2D" uid="uid://dgdbto63canyv" path="res://assets/Tiles/tile_0084.png" id="1_leome"]
+[ext_resource type="Texture2D" uid="uid://b8lmx40hbtcb5" path="res://assets/Tiles/tile_0129.png" id="2_j4iv4"]
+[ext_resource type="Script" uid="uid://bvamkgh4su5ul" path="res://scripts/health_bar.gd" id="3_j4iv4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mjf2r"]
+size = Vector2(18, 17.625)
+
+[node name="Wizard" type="CharacterBody2D" unique_id=2139534367]
+motion_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2058670166]
+scale = Vector2(1.568, 1.463)
+texture = ExtResource("1_leome")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1313756833]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_mjf2r")
+
+[node name="Tile0129" type="Sprite2D" parent="." unique_id=1114305515]
+position = Vector2(11, 4)
+rotation = 0.4660029
+texture = ExtResource("2_j4iv4")
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=1275044524]
+offset_left = -12.0
+offset_top = -16.0
+offset_right = 12.0
+offset_bottom = -12.0
+value = 100.0
+show_percentage = false
+script = ExtResource("3_j4iv4")

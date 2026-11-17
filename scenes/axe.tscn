@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cwy0mw4iec3da"]
+
+[ext_resource type="Script" uid="uid://cq51bx5bynl1y" path="res://scripts/axe.gd" id="1_725vr"]
+[ext_resource type="Texture2D" uid="uid://b2xtbxee7offn" path="res://assets/Tiles/tile_0119.png" id="2_725vr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8s0ly"]
+size = Vector2(8, 14)
+
+[node name="Axe" type="Area2D" unique_id=1429869825]
+script = ExtResource("1_725vr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=967444749]
+texture = ExtResource("2_725vr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=282398035]
+position = Vector2(-2, 0)
+shape = SubResource("RectangleShape2D_8s0ly")

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://47cfner5vntq"]
+
+[ext_resource type="Script" uid="uid://cd33opmk62flc" path="res://scripts/TeamRightAI/right_ai.gd" id="1_l8gog"]
+
+[node name="TeamRightAi" type="Node2D" unique_id=2093098229]
+script = ExtResource("1_l8gog")

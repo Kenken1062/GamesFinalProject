@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dou2q7id43ysa"]
+
+[ext_resource type="Texture2D" uid="uid://bsc8ex7sxjer4" path="res://assets/Tiles/tile_0087.png" id="1_puu3n"]
+[ext_resource type="Texture2D" uid="uid://b2xtbxee7offn" path="res://assets/Tiles/tile_0119.png" id="2_8k012"]
+[ext_resource type="Script" uid="uid://bvamkgh4su5ul" path="res://scripts/health_bar.gd" id="3_047vv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mjf2r"]
+size = Vector2(18, 17.625)
+
+[node name="AxeThrower" type="CharacterBody2D" unique_id=2139534367]
+motion_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2058670166]
+scale = Vector2(1.568, 1.463)
+texture = ExtResource("1_puu3n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1313756833]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_mjf2r")
+
+[node name="Tile0119" type="Sprite2D" parent="." unique_id=900634022]
+position = Vector2(-12, 4)
+rotation = -0.34906584
+texture = ExtResource("2_8k012")
+
+[node name="Tile0120" type="Sprite2D" parent="." unique_id=1283570894]
+position = Vector2(10.999999, 3.9999995)
+rotation = 0.34906584
+texture = ExtResource("2_8k012")
+flip_h = true
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=316459820]
+offset_left = -12.0
+offset_top = -16.0
+offset_right = 12.0
+offset_bottom = -12.0
+value = 100.0
+show_percentage = false
+script = ExtResource("3_047vv")

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cf3dorn3qrpc8"]
+
+[ext_resource type="Script" uid="uid://bb7d8h3c2s6ao" path="res://scripts/fireball.gd" id="1_1gl40"]
+[ext_resource type="Texture2D" uid="uid://bidkwrahyp6t4" path="res://assets/Tiles/tile_0082.png" id="1_3s14c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1gl40"]
+radius = 6.0
+
+[node name="Fireball" type="Area2D" unique_id=1331681]
+script = ExtResource("1_1gl40")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1845337821]
+modulate = Color(1, 0.54901963, 0.101960786, 1)
+self_modulate = Color(1, 0.54901963, 0.101960786, 1)
+position = Vector2(1.1920929e-07, 1.1920929e-07)
+scale = Vector2(0.85156256, 0.828125)
+texture = ExtResource("1_3s14c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1514584601]
+shape = SubResource("CircleShape2D_1gl40")

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://digeqmoqy607l"]
+
+[ext_resource type="Script" uid="uid://bev4nh4adb1lx" path="res://scripts/TeamLeftAI/left_ai.gd" id="1_wa2y8"]
+
+[node name="TeamLeftAi" type="Node2D" unique_id=1184163904]
+script = ExtResource("1_wa2y8")
