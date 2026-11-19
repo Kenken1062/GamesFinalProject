@@ -17,8 +17,8 @@ func _physics_process(_delta: float) -> void:
 	if left_alive == 0 and right_alive == 0:
 		end_match(-1) # Draw.
 	elif left_alive == 1 and right_alive == 1 \
-	and left_team_units[0].is_in_group("healer") \
-	and right_team_units[0].is_in_group("healer"):
+	and left_team_units[0].is_in_group("left healer") \
+	and right_team_units[0].is_in_group("right healer"):
 		end_match(-1) # Draw.
 	elif left_alive == 0:
 		end_match(1) # Team Right wins.
